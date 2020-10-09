@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  app:
+    build: ./db/
+    restart: always
+    volumes:
+      - ./json:/data
+    ports:
+      - 3000:3000
+
